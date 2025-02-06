@@ -1,5 +1,5 @@
 # Covid-19 variant classification using GNN
-By Shreyas Udaya, Harsha N.P., Kiran Reddy R.
+By Shreyas Udaya, Harsha N.P., Kiran Reddy R, Sunil Kumar.
 
 
 ## Requirements
