@@ -6,6 +6,8 @@ By Shreyas Udaya, Harsha N.P., Kiran Reddy R, Sunil Kumar.
 
 This code implements a deep learning model for classifying COVID-19 variants using DNA sequences. The GNN model is specified in the gnn_classifier.ipynb file. Training is conducted using the train_test_split function from the sklearn.model_selection module in splitset.py file, while the dataset is loaded through the kprocheatmap.py file.
 
+
+
 ## Requirements
 Pytorch,
 Seaborn,
@@ -28,6 +30,9 @@ To ensure high-quality data for model training, preprocessing steps such as data
 ## Used
 The Dataset consists of FCGR Encoded heatmap (K=3) images split into the image-net format, i.e., split into the train and test directories in the ratio of 3:1 for train and test. A separately prepared FCGR Heatmap split dataset can be found at https://www.kaggle.com/datasets/shreyasudaya/fcgr-covid-variants. 
 
+## Implementation
+Various Graph Neural Network (GNN) models, including Graph Convolution Networks (GCN), GraphSAGE, GraphUNet, EdgeCNN, and Graph Attention Transformer (GAT), were implemented and evaluated. Each model was executed 10 times to optimize performance through fine-tuning.
+
 ## Evaluation and Train Code
 
 Data preparation follows the algorithm
@@ -35,6 +40,7 @@ Data preparation follows the algorithm
 - Run code:
     1. Take gnn-classifier.ipynb either on colab or kaggle
     2. Run the notebook and convert runtime type to GPU
+       
 
 ## Directory Structure
 
