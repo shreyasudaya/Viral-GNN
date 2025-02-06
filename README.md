@@ -4,6 +4,7 @@ By Shreyas Udaya, Harsha N.P., Kiran Reddy R, Sunil Kumar.
 
 ![image](https://github.com/user-attachments/assets/656ad792-ff95-4844-89e1-91c94b75ffcc)
 
+This code implements a deep learning model for classifying 10 COVID-19 variants using DNA sequences. The model architecture is specified in the Viral-GNN.py file. Training is conducted using the train_test_split function from the sklearn.model_selection module, while the dataset is loaded through the Utils.py file.
 
 ## Requirements
 Pytorch,
