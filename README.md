@@ -19,15 +19,14 @@ Torchvision
 
 ## Dataset
 The dataset utilized for training and testing the model comprises 10,334 complete genomic sequences of SARS-CoV-2, spanning 11 distinct variants. The DNA sequences are stored in the data/genomic.fna files. The dataset can be accessed from the NCBI website (https://www.ncbi.nlm.nih.gov/) by using the following keywords in the search.
+
 B.1.1.519, B.1.1.529 (Omnicron), B.1.1.7 (Alpha), B.1.351 (Beta), B.1.427, B.1.429, B.1.525, B.1.526, B.1.621, C.37 (Lambda), P.1 (Gamma).
 
 ## Dataset Preparation and Feature Extraction
-To ensure data quality and prepare the dataset for model training, we performed the following preprocessing steps: data cleaning, formatting, and organization. In Genomic Sequence Encoding, the nucleotide sequences are represented as strings of characters (A, C, G, T).
+To ensure high-quality data for model training, preprocessing steps such as data cleaning, formatting, and organization were performed. In genomic sequence encoding, nucleotide sequences are represented as character strings consisting of A, C, G, and T. The dataset was preprocessed using one-hot encoding, K-mers, and FCGR-encoded heatmaps for 11 different SARS-CoV-2 variants available in the Dataset folder. The Feature Ext folder contains the respective feature, which is loaded through the code to facilitate conversion into different encoding formats. 
 
-
-
-The Dataset consists of heatmap images split into the image-net format i.e. split into the train and test directories in the ratio of 3:1 for train and test.
-The Dataset can be found at https://www.kaggle.com/datasets/shreyasudaya/fcgr-covid-variants 
+## Used
+The Dataset consists of FCGR Encoded heatmap (K=3) images split into the image-net format, i.e., split into the train and test directories in the ratio of 3:1 for train and test. A separately prepared FCGR Heatmap split dataset can be found at https://www.kaggle.com/datasets/shreyasudaya/fcgr-covid-variants. 
 
 ## Evaluation and Train Code
 
@@ -39,7 +38,7 @@ Data preparation follows the algorithm
 
 ## Directory Structure
 
-Dataset is also available in directory Dataset, with it consisting of kmers, one-hot and fcgr feature extractions. Alongside this is Feature Ext, which contains the files in order to extract the feature and convert it.
+The dataset is also available in the directory Dataset, which consists of k-mers, one-hot, and FCGR heatmap encoded feature extractions. Alongside this is Feature Ext, which contains the files in order to extract the feature and convert it.
 
 ```
 project
