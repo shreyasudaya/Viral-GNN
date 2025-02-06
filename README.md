@@ -1,5 +1,5 @@
 # COVID-19 Variant Classification Using GNN
-By Shreyas Udaya, Harsha N.P., Kiran Reddy R, Sunil Kumar.
+By Sunil Kumar, Shreyas Udaya, Harsha N.P., Kiran Reddy R.
 
 
 ![image](https://github.com/user-attachments/assets/656ad792-ff95-4844-89e1-91c94b75ffcc)
@@ -40,7 +40,18 @@ Data preparation follows the algorithm
 - Run code:
     1. Take gnn-classifier.ipynb either on colab or kaggle
     2. Run the notebook and convert runtime type to GPU
-       
+
+
+## TABLE Model Validation Accuracy
+
+| Model       | Overall Accuracy |
+|------------|----------------|
+| Vision GCN | 98.94%         |
+| GraphSAGE  | 99.44%         |
+| GraphUNet  | 97.40%         |
+| EdgeCNN    | 98.40%         |
+| GAT        | 99.27%         |
+| CNN        | 98.30%         |
 
 ## Directory Structure
 
