@@ -1,5 +1,8 @@
-# Covid-19 variant classification using GNN
+# COVID-19 Variant Classification Using GNN
 By Shreyas Udaya, Harsha N.P., Kiran Reddy R, Sunil Kumar.
+
+
+![image](https://github.com/user-attachments/assets/656ad792-ff95-4844-89e1-91c94b75ffcc)
 
 
 ## Requirements
@@ -9,6 +12,9 @@ Torch Geometric,
 Matplotlib,
 Sklearn,
 Torchvision
+
+
+
 
 ## Dataset
 
