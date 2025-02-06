@@ -18,7 +18,7 @@ Torchvision
 
 
 ## Dataset
-
+The dataset utilized for training and testing the model comprises DNA sequences from 10 COVID-19 variants. The DNA sequences are stored in the data/genomic.fna and data/protein.faa files, respectively. The dataset can be accessed from the NCBI website (https://www.ncbi.nlm.nih.gov/) by using the following keywords in the search.
 The Dataset consists of heatmap images split into the image-net format i.e. split into the train and test directories in the ratio of 3:1 for train and test.
 The Dataset can be found at https://www.kaggle.com/datasets/shreyasudaya/fcgr-covid-variants 
 
