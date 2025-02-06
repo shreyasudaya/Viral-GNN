@@ -24,6 +24,23 @@ B.1.1.519, B.1.1.529 (Omnicron), B.1.1.7 (Alpha), B.1.351 (Beta), B.1.427, B.1.4
 ## Dataset Preparation and Feature Extraction
 To ensure high-quality data for model training, preprocessing steps such as data cleaning, formatting, and organization were conducted. In genomic sequence encoding, nucleotide sequences are represented as character strings (A, C, G, and T). The dataset was processed using one-hot encoding, K-mers, and FCGR-encoded heatmaps for 11 COVID-19 variants available in the Dataset folder. The Feature Ext folder contains the corresponding features, which are loaded through the code to facilitate conversion into different encoding formats. 
 
+## TABLE Description of COVID-19 Variant with corresponding number of sample
+
+|          Variants          |  Total No. of Sample  |
+|----------------------------|-----------------------|
+|     B.1.1.519              |         1000          |
+|     B.1.1.529 (Omnicron)   |         1000          |
+|     B.1.1.7 (Alpha)        |         1000          |
+|     B.1.351 (Beta)         |         403           |
+|     B.1.427                |         1000          |
+|     B.1.429                |         1000          |
+|     B.1.525                |         431           |
+|     B.1.526                |         1000          |
+|     B.1.621                |         1000          |
+|     C.37 (Lambda)          |         400           |
+|     P.1 (Gamma)            |         1000          |
+
+
 ## Used FCGR Heatmap Encoded
 The Dataset consists of FCGR Encoded heatmap (K=3) images split into the image-net format, i.e., split into the train and test directories in the ratio of 3:1 for train and test. A separately prepared FCGR Heatmap split dataset can be found at https://www.kaggle.com/datasets/shreyasudaya/fcgr-covid-variants. 
 
@@ -41,14 +58,14 @@ Data preparation follows the algorithm
 
 ## TABLE Model Validation Accuracy
 
-| Model       | Overall Accuracy |
-|------------|----------------|
-| Vision GCN | 98.94%         |
-| GraphSAGE  | 99.44%         |
-| GraphUNet  | 97.40%         |
-| EdgeCNN    | 98.40%         |
-| GAT        | 99.27%         |
-| CNN        | 98.30%         |
+|    Model   | Overall Accuracy |
+|------------|------------------|
+| Vision GCN |     98.94%       |
+| GraphSAGE  |     99.44%       |
+| GraphUNet  |     97.40%       |
+| EdgeCNN    |     98.40%       |
+| GAT        |     99.27%       |
+| CNN        |     98.30%       |
 
 ## Directory Structure
 
