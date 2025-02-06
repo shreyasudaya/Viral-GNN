@@ -24,7 +24,7 @@ B.1.1.519, B.1.1.529 (Omnicron), B.1.1.7 (Alpha), B.1.351 (Beta), B.1.427, B.1.4
 ## Dataset Preparation and Feature Extraction
 To ensure high-quality data for model training, preprocessing steps such as data cleaning, formatting, and organization were conducted. In genomic sequence encoding, nucleotide sequences are represented as character strings (A, C, G, and T). The dataset was processed using one-hot encoding, K-mers, and FCGR-encoded heatmaps for 11 COVID-19 variants available in the Dataset folder. The Feature Ext folder contains the corresponding features, which are loaded through the code to facilitate conversion into different encoding formats. 
 
-## TABLE Description of COVID-19 Variant with corresponding number of sample
+## Description of COVID-19 Variant with corresponding number of sample
 
 |          Variants          |  Total No. of Sample  |
 |----------------------------|-----------------------|
@@ -56,7 +56,7 @@ Data preparation follows the algorithm
     2. Run the notebook and convert runtime type to GPU
 
 
-## TABLE Model Validation Accuracy
+## Model Validation Accuracy
 
 |    Model   | Overall Accuracy |
 |------------|------------------|
