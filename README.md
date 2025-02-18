@@ -22,8 +22,7 @@ The dataset utilized for training and testing the model comprises 10,334 complet
 B.1.1.519, B.1.1.529 (Omnicron), B.1.1.7 (Alpha), B.1.351 (Beta), B.1.427, B.1.429, B.1.525, B.1.526, B.1.621, C.37 (Lambda), P.1 (Gamma).
 
 ## Dataset Preparation and Feature Extraction
-To ensure high-quality data for model training, preprocessing steps such as data cleaning, formatting, and organization were conducted. In genomic sequence encoding, nucleotide sequences are represented as character strings (A, C, G, and T). The dataset was processed using one-hot encoding, K-mers, and FCGR-encoded heatmaps for 11 COVID-19 variants available in the Dataset folder. The Feature Ext folder contains the corresponding features, which are loaded through the code to facilitate conversion into different encoding formats. 
-
+Preprocessing steps, including data cleaning, formatting, and organization, were performed to ensure high-quality input for model training. The NCBI dataset initially contained 10,334 samples, which, after preprocessing, was reduced to 9,234 nucleotide sequences. Each genomic sequence is represented as a string comprising four nucleotide bases: A, C, G, and T. To facilitate feature extraction, the dataset was encoded using three distinct methods: one-hot encoding, K-mers, and Frequency Chaos Game Representation (FCGR) heatmaps. These transformations were applied to 11 COVID-19 variants stored in the Dataset folder. The Feature Ext folder contains the corresponding extracted features, which are loaded by the code to support conversion into various encoding formats.
 
 ## Used FCGR Heatmap Encoded
 The Dataset consists of FCGR Encoded heatmap (K=3) images split into the image-net format, i.e., split into the train and test directories in the ratio of 3:1 for train and test. A separately prepared FCGR Heatmap split dataset can be found at https://www.kaggle.com/datasets/shreyasudaya/fcgr-covid-variants. 
