@@ -17,7 +17,7 @@ Sklearn,
 Torchvision
 
 ## Dataset
-The dataset utilized for training and testing the model comprises 10,334 complete genomic sequences of SARS-CoV-2, spanning 11 distinct variants. The DNA sequences are stored in the data/genomic.fna files. The dataset can be accessed from the NCBI website (https://www.ncbi.nlm.nih.gov/) by using the following keywords SARS-CoV-2 in the search.
+The dataset comprises 10,334 complete genomic sequences of SARS-CoV-2, spanning 11 distinct variants. The DNA sequences are stored in the data/genomic.fna files. The dataset can be accessed from the NCBI website (https://www.ncbi.nlm.nih.gov/) by using the following keywords SARS-CoV-2 in the search.
 
 B.1.1.519, B.1.1.529 (Omnicron), B.1.1.7 (Alpha), B.1.351 (Beta), B.1.427, B.1.429, B.1.525, B.1.526, B.1.621, C.37 (Lambda), P.1 (Gamma).
 
