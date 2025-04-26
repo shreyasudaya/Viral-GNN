@@ -1,5 +1,5 @@
 # COVID-19 Variant Classification Using GNN
-By Sunil Kumar, Shreyas Udaya, Harsha N.P., Kiran Reddy R.
+By Sunil Kumar, Shreyas Udaya, Harsha N.P., Kiran Reddy R, Biswajit Bhowmik.
 
 
 ![image](https://github.com/user-attachments/assets/656ad792-ff95-4844-89e1-91c94b75ffcc)
