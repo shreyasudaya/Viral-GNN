@@ -25,7 +25,7 @@ B.1.1.519, B.1.1.529 (Omnicron), B.1.1.7 (Alpha), B.1.351 (Beta), B.1.427, B.1.4
 Preprocessing steps, including data cleaning, formatting, and organization, were performed to ensure high-quality input for model training. The NCBI dataset contained 9,234 samples, which, after preprocessing. Each genomic sequence is represented as a string comprising four nucleotide bases: A, C, G, and T. To facilitate feature extraction, the dataset was encoded using three distinct methods: one-hot encoding, K-mers, and Frequency Chaos Game Representation (FCGR) heatmaps. These transformations were applied to 11 COVID-19 variants stored in the Dataset folder. The Feature Ext folder contains the corresponding extracted features, which are loaded by the code to support conversion into various encoding formats.
 
 ## Used FCGR Heatmap Encoded
-The dataset consists of FCGR-encoded heatmap images generated with K=3. These heatmap images are organized following the ImageNet format, with separate train and test directories in a 3:1 ratio. A separately prepared version of the FCGR heatmap dataset is available at https://www.kaggle.com/datasets/shreyasudaya/fcgr-covid-variants.
+The dataset consists of FCGR-encoded heatmap images generated with K=3. These heatmap images are organized following the ImageNet format, with separate train and test directories. A separately prepared version of the FCGR heatmap dataset is available at https://www.kaggle.com/datasets/shreyasudaya/fcgr-covid-variants.
 
 ## Implementation
 Various Graph Neural Network (GNN) models, including Graph Convolution Networks (GCN), GraphSAGE, GraphUNet, EdgeCNN, and Graph Attention Transformer (GAT), were implemented and evaluated. Each model was executed 10 times to optimize performance through fine-tuning.
