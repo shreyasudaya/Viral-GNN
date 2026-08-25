@@ -4,7 +4,7 @@ By Sunil Kumar, Shreyas Udaya, Harsha N.P., Kiran Reddy R, Biswajit Bhowmik.
 
 ![image](https://github.com/user-attachments/assets/656ad792-ff95-4844-89e1-91c94b75ffcc)
 
-This code implements a deep learning model for classifying COVID-19 variants using DNA sequences. The GNN model is specified in the gnn_classifier.ipynb file. Training is conducted using the train_test_split function from the sklearn.model_selection module in the splitset.py file, while the dataset is loaded through the kprocheatmap.py file.
+This code implements a deep learning model for classifying SARS-CoV-2 variants using genomic nucleotide sequences. The GNN model is specified in the gnn_classifier.ipynb file. Training is conducted using the train_test_split function from the sklearn.model_selection module in the splitset.py file, while the dataset is loaded through the kprocheatmap.py file.
 
 
 
@@ -17,7 +17,7 @@ Sklearn,
 Torchvision
 
 ## Dataset
-The dataset comprises 9,234 complete genomic sequences of SARS-CoV-2, spanning 11 distinct variants. The DNA sequences are stored in the data/genomic.fna files. The dataset can be accessed from the NCBI website (https://www.ncbi.nlm.nih.gov/) by using the following keywords SARS-CoV-2 in the search.
+The dataset comprises 9,234 complete genomic sequences of SARS-CoV-2, spanning 11 distinct variants. The SARS-CoV-2 genomic nucleotide sequences are stored in the data/genomic.fna files. The dataset can be accessed from the NCBI website (https://www.ncbi.nlm.nih.gov/) by using the following keywords SARS-CoV-2 in the search.
 
 B.1.1.519, B.1.1.529 (Omnicron), B.1.1.7 (Alpha), B.1.351 (Beta), B.1.427, B.1.429, B.1.525, B.1.526, B.1.621, C.37 (Lambda), P.1 (Gamma).
 
