@@ -1,4 +1,4 @@
-# COVID-19 Variant Classification Using GNN
+# Frequency Chaos Game Representation–Based Deep Learning for SARS-CoV-2 Variant Classification}
 By Sunil Kumar, Shreyas Udaya, Harsha N.P., Kiran Reddy R, Biswajit Bhowmik.
 
 
