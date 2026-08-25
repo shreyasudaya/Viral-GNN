@@ -1,4 +1,4 @@
-# Frequency Chaos Game Representation–Based Deep Learning for SARS-CoV-2 Variant Classification}
+# Frequency Chaos Game Representation–Based Deep Learning for SARS-CoV-2 Variant Classification
 By Sunil Kumar, Shreyas Udaya, Harsha N.P., Kiran Reddy R, Biswajit Bhowmik.
 
 
@@ -19,7 +19,7 @@ Torchvision
 ## Dataset
 The dataset comprises 9,234 complete genomic sequences of SARS-CoV-2, spanning 11 distinct variants. The SARS-CoV-2 genomic nucleotide sequences are stored in the data/genomic.fna files. The dataset can be accessed from the NCBI website (https://www.ncbi.nlm.nih.gov/) by using the following keywords SARS-CoV-2 in the search.
 
-B.1.1.519, B.1.1.529 (Omnicron), B.1.1.7 (Alpha), B.1.351 (Beta), B.1.427, B.1.429, B.1.525, B.1.526, B.1.621, C.37 (Lambda), P.1 (Gamma).
+B.1.1.519, B.1.1.529 (Omicron), B.1.1.7 (Alpha), B.1.351 (Beta), B.1.427, B.1.429, B.1.525, B.1.526, B.1.621, C.37 (Lambda), P.1 (Gamma).
 
 ## Dataset Preparation and Feature Extraction
 Preprocessing steps, including data cleaning, formatting, and organization, were performed to ensure high-quality input for model training. The NCBI dataset contained 9,234 samples, which, after preprocessing. Each genomic sequence is represented as a string comprising four nucleotide bases: A, C, G, and T. To facilitate feature extraction, the dataset was encoded using three distinct methods: one-hot encoding, K-mers, and Frequency Chaos Game Representation (FCGR) heatmaps. These transformations were applied to 11 COVID-19 variants stored in the Dataset folder. The Feature Ext folder contains the corresponding extracted features, which are loaded by the code to support conversion into various encoding formats.
