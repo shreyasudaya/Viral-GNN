@@ -53,7 +53,7 @@ The study uses **9,234 SARS-CoV-2 genomic nucleotide sequences** distributed acr
 - C.37 (Lambda)
 - P.1 (Gamma)
 
-The original genomic sequences were obtained from the **NCBI Virus SARS-CoV-2 Data Hub**: https://www.ncbi.nlm.nih.gov/labs/virus/vssi/
+The original genomic sequences were obtained from the **NCBI Virus SARS-CoV-2 Data Hub**: [https://www.ncbi.nlm.nih.gov/labs/virus/vssi/](https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/virus?SeqType_s=Nucleotide&VirusLineage_ss=Severe%20acute%20respiratory%20syndrome%20coronavirus%202,%20taxid:2697049&Lineage_s=B.1.1.519&Lineage_s=B.1.1.7&Lineage_s=B.1.1.529&Lineage_s=B.1.351&Lineage_s=B.1.427&Lineage_s=B.1.429&Lineage_s=B.1.525&Lineage_s=B.1.526&Lineage_s=C.37&Lineage_s=P.1&Lineage_s=B.1.621&HostLineage_ss=Homo%20sapiens,%20taxid:9606&Completeness_s=complete)
 
 The accession-level information associated with the dataset is provided in: `final_accession_list_FINAL.csv`
 
