@@ -4,10 +4,30 @@ By Sunil Kumar, Shreyas Udaya, Harsha N.P., Kiran Reddy R, Biswajit Bhowmik.
 
 ![image](https://github.com/user-attachments/assets/656ad792-ff95-4844-89e1-91c94b75ffcc)
 
-This code implements a deep learning framework for SARS-CoV-2 variant classification using genomic nucleotide sequences. The GNN implementation
-is provided in `gnn_classifier.ipynb`. Data splitting and preprocessing are implemented through the corresponding Python scripts and notebooks
-provided in this repository.
+This repository contains the source code, prepared datasets, feature representations, accession-level information, and experimental resources associated with the study: **“Frequency Chaos Game Representation–Based Deep Learning for SARS-CoV-2
+Variant Classification.”**
 
+The repository is intended to support transparency and reproducibility of the experiments reported in the associated manuscript.
+
+---
+
+## Repository Contents
+
+The repository contains the following principal resources:
+
+| Resource | Description |
+|---|---|
+| `gnn_classifier.ipynb` | GNN model implementation, training, and evaluation |
+| `splitset.py` | Dataset splitting procedure |
+| `final_accession_list_FINAL.csv` | Accession-level information for the dataset |
+| `Dataset/` | Prepared FCGR, k-mer, and one-hot feature representations |
+| `Feature Ext/` | Feature extraction and preprocessing scripts |
+| `Result/` | Experimental results |
+| `log.txt` | Experimental/training log |
+| `requirements.txt` | Python package dependencies |
+| `preprocessing_flow_table_FINAL 3.numbers` | Preprocessing workflow documentation |
+
+---
 
 ## Requirements
 Pytorch,
@@ -19,26 +39,50 @@ Torchvision
 
 ## Dataset
 
-The dataset comprises 9,234 complete SARS-CoV-2 genomic sequences spanning 11 distinct variant classes. The genomic nucleotide sequences are stored
-in the `data/genomic.fna` files. The original genomic sequences can be accessed through the NCBI repository (https://www.ncbi.nlm.nih.gov/) using SARS-CoV-2-related search terms.
+The study uses **9,234 SARS-CoV-2 genomic nucleotide sequences** distributed across 11 variant classes:
 
-The evaluated variant classes are:
+- B.1.1.519
+- B.1.1.529 (Omicron)
+- B.1.1.7 (Alpha)
+- B.1.351 (Beta)
+- B.1.427
+- B.1.429
+- B.1.525
+- B.1.526
+- B.1.621
+- C.37 (Lambda)
+- P.1 (Gamma)
 
-B.1.1.519, B.1.1.529 (Omicron), B.1.1.7 (Alpha), B.1.351 (Beta), B.1.427, B.1.429, B.1.525, B.1.526, B.1.621, C.37 (Lambda), P.1 (Gamma).
+The original genomic sequences were obtained from the **NCBI Virus SARS-CoV-2 Data Hub**: https://www.ncbi.nlm.nih.gov/labs/virus/vssi/
 
-## Dataset Preparation and Feature Extraction
+The accession-level information associated with the dataset is provided in: `final_accession_list_FINAL.csv`
 
-Preprocessing steps, including data cleaning, formatting, and organization, were performed to prepare the genomic nucleotide sequences for model
-processing. Each genomic sequence is represented using the nucleotide alphabet A, C, G, and T. Feature representations include one-hot encoding,
-k-mer representations, and Frequency Chaos Game Representation (FCGR) heatmaps. These representations are organized according to the 11
-SARS-CoV-2 variant classes stored in the Dataset folder. The Feature Ext folder contains the corresponding extracted features, which are loaded by the code to support conversion into various encoding formats.
+---
 
-## Used FCGR Heatmap Encoded
 
-The dataset consists of FCGR-encoded heatmap images generated using \(k=3\). The FCGR dataset is organized into training and validation
-directories using the adopted 75:25 split.
+## FCGR Dataset
 
-A separately prepared FCGR heatmap dataset is available at: https://www.kaggle.com/datasets/shreyasudaya/fcgr-covid-variants.
+Frequency Chaos Game Representation (FCGR) heatmaps were generated using \(k=3\). The prepared FCGR dataset used in the experiments is available at: https://www.kaggle.com/datasets/shreyasudaya/fcgr-covid-variants. The FCGR dataset follows the **75:25 training/validation split** adopted in the study.
+
+---
+
+## Feature Representations
+
+The repository contains the following feature representations:
+
+1. One-hot encoding
+2. k-mer representation
+3. Frequency Chaos Game Representation (FCGR)
+
+The corresponding feature-extraction scripts are located in:
+
+```text
+Feature Ext/
+├── kprocheatmap.py
+├── kproc.py
+└── proc.py
+
+```
 
 ## Implementation
 
@@ -66,22 +110,26 @@ The dataset is also available in the directory Dataset, which consists of k-mers
 
 ```
 
-project
-│   README.md
-│   gnn_classifier.ipynb
-│   splitset.py
+project/
 │
-├── Dataset
-│   ├── FCGR
-│   ├── kmer
-│   └── one-hot
+├── Dataset/
+│   ├── FCGR/
+│   ├── kmer/
+│   └── one-hot/
 │
-├── Feature Ext
+├── Feature Ext/
 │   ├── kprocheatmap.py
 │   ├── kproc.py
 │   └── proc.py
 │
-└── Result
-
-└───Result
+├── Result/
+│
+├── .gitignore
+├── README.md
+├── final_accession_list_FINAL.csv
+├── gnn_classifier.ipynb
+├── log.txt
+├── preprocessing_flow_table_FINAL 3.numbers
+├── requirements.txt
+└── splitset.py
 ```
