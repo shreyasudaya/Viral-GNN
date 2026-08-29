@@ -26,6 +26,7 @@ The repository contains the following principal resources:
 | `log.txt` | Experimental/training log |
 | `requirements.txt` | Python package dependencies |
 | `preprocessing_flow_table_FINAL 3.numbers` | Preprocessing workflow documentation |
+| `Supplementary Materials.pdf` | Supplementary Materials for Dataset Construction Documentation |
 
 ---
 
@@ -132,4 +133,5 @@ project/
 ├── preprocessing_flow_table_FINAL 3.numbers
 ├── requirements.txt
 └── splitset.py
+└── Supplementary materials.pdf
 ```
